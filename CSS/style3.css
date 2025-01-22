@@ -1,0 +1,235 @@
+.body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #D6D4D3;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #040101;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    grid-template-rows: 100px 1fr 80px;
+    grid-template-areas: 
+    "бічна панель заголовок"
+    "бічна панель основа"
+    "бічна панель силка";
+    }
+
+.Header{
+  grid-area: заголовок ;
+  background-color: #8CFD8C;
+  display: flex;           
+    flex-direction: column;  
+    align-items: center;      
+    justify-content:center;   
+    gap: 0;                   
+    padding: 0; 
+    font-size: 70px;
+    font-weight: bold;         
+
+  
+}
+
+.Sidebar {
+    grid-area: бічна панель;
+    background-color: #B2D3FF;
+    height: 100vh;            
+    display: flex;           
+    flex-direction: column;  
+    align-items: center;      
+    justify-content:start;   
+    gap: 0;                   
+    padding: 0;    
+    font-size: 30px;       
+  }
+
+  .Sidebar a {
+    text-decoration: none;
+    color: black; 
+}
+
+.Sidebar a:active {
+    color: blue; 
+}
+  
+
+h1{
+    margin-top: 75px;
+    font-size: 30px;
+}
+
+
+
+.Mane{
+ grid-area: основа ;
+}
+
+.block1 p{
+    margin: 15px;
+    font-size: 35px;
+}
+
+.block2 p{
+    margin: 15px;
+    font-size: 40px;
+}
+
+.block3 p{
+    margin: 15px;
+    font-size: 40px;
+}
+
+.content3{
+    display: flex; 
+    flex-direction: row; 
+height: 51.7vh;
+}
+
+
+.фото1{
+    width: 100%;
+}
+
+.фото2{
+    width: 100%;
+} 
+
+.block4 p{
+    margin: 15px;
+    font-size: 39px;
+}
+
+.block4 img{
+    width: 100%;
+}
+
+.content1{
+    display: flex; 
+    flex-direction: row; 
+    width: 100%; 
+}
+
+.block5 p{
+    margin: 15px;
+    font-size: 45px;
+}
+
+.block5 img{
+    width: 100%;
+}
+
+.content4{
+    display: flex; 
+    flex-direction: row; 
+    height: 55vh;
+}
+
+.content4 p{
+    font-size: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.content1 img{
+    flex: 1;
+    object-fit: cover;
+    height: 70vh;
+}
+
+.color-block1{
+    width: 100%;
+    height: 25px;
+    background-color: #8CFD8C;
+}
+
+.color-block2{
+    width: 100%;
+    height: 25px;
+    background-color: #8CFD8C;
+}
+
+.content2{
+    display: flex; 
+    flex-direction: row; 
+    width: 100%; 
+    height: 56.5vh;
+}
+
+.content2 p{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.Link{
+ grid-area: силка ;
+}
+
+.color-block2{
+    width: 100%;
+    height: 25px;
+    background-color: #8CFD8C;
+}
+
+.color-block1{
+    width: 100%;
+    height: 25px;
+    background-color: #8CFD8C;
+}
+
+.color-block3{
+    width: 100%;
+    height: 25px;
+    background-color: #8CFD8C;
+}
+
+.силка{
+    height: 60px;
+    display: flex;           
+    flex-direction: column;  
+    align-items: end;      
+    justify-content:center ;  
+}
+
+@media screen and (max-width: 768px) {
+    .Sidebar {
+        position: fixed;
+        grid-area: панель;
+        background-color: #B2D3FF;
+        height: 1568px;          
+        display: flex;           
+        flex-direction: column;  
+        align-items: center;      
+        justify-content:space-between;   
+        gap: 0;                   
+        padding: 0;               
+      }
+
+      .content2 p{
+        font-size: 28px;
+        font-weight: bold;
+      }
+
+      .content3 p{
+        font-size: 25px;
+        font-weight: bold;
+      }
+
+      .content4 p{
+        font-size: 28px;
+        font-weight: bold;
+      }
+     
+}
+
+.силка a {
+    text-decoration: none; 
+    color: black; 
+    
+}
+
+.силка a:active {
+    color: blue; 
+}
